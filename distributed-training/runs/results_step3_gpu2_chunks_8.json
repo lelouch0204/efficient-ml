@@ -1,0 +1,87 @@
+{
+  "config": {
+    "world_size": 2,
+    "global_batch_size": 64,
+    "chunks": 8,
+    "partition": "even",
+    "steps_warmup": 20,
+    "steps_measure": 100
+  },
+  "per_seed_results": [
+    {
+      "seed": 1,
+      "throughput_samples_per_s": 659.9460125324994,
+      "mem_peak_per_rank_bytes": [
+        10419187712,
+        10418793984
+      ],
+      "stage_forward_time_ms_per_rank": [
+        113.9066037940979,
+        105.82493171691894
+      ]
+    },
+    {
+      "seed": 2,
+      "throughput_samples_per_s": 660.523988150131,
+      "mem_peak_per_rank_bytes": [
+        10419187712,
+        10418793984
+      ],
+      "stage_forward_time_ms_per_rank": [
+        223.56663473129274,
+        201.90255907058716
+      ]
+    },
+    {
+      "seed": 3,
+      "throughput_samples_per_s": 660.163186819335,
+      "mem_peak_per_rank_bytes": [
+        10419187712,
+        10418793984
+      ],
+      "stage_forward_time_ms_per_rank": [
+        334.8865252971649,
+        301.9134864902496
+      ]
+    }
+  ],
+  "aggregated": {
+    "num_runs": 3,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "throughput_mean": 660.2110625006552,
+    "throughput_std": 0.2383736762460249,
+    "throughput_all": [
+      659.9460125324994,
+      660.523988150131,
+      660.163186819335
+    ],
+    "peak_memory_mean_per_rank_bytes": [
+      10419187712.0,
+      10418793984.0
+    ],
+    "peak_memory_std_per_rank_bytes": [
+      0.0,
+      0.0
+    ],
+    "peak_memory_mean_per_rank_mb": [
+      9936.51171875,
+      9936.13623046875
+    ],
+    "peak_memory_std_per_rank_mb": [
+      0.0,
+      0.0
+    ],
+    "stage_time_mean_per_rank_ms": [
+      224.1199212741852,
+      203.21365909258523
+    ],
+    "stage_time_std_per_rank_ms": [
+      90.2155235029771,
+      80.05818536424675
+    ]
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "config": {
+    "world_size": 3,
+    "global_batch_size": 64,
+    "chunks": 4,
+    "partition": "even",
+    "steps_warmup": 20,
+    "steps_measure": 100
+  },
+  "per_seed_results": [
+    {
+      "seed": 1,
+      "throughput_samples_per_s": 658.0611191842062,
+      "mem_peak_per_rank_bytes": [
+        7168765952,
+        7067316224,
+        7168372224
+      ],
+      "stage_forward_time_ms_per_rank": [
+        90.05451456069946,
+        83.05212194442748,
+        81.26174150466919
+      ]
+    },
+    {
+      "seed": 2,
+      "throughput_samples_per_s": 652.8875549971126,
+      "mem_peak_per_rank_bytes": [
+        7168765952,
+        7067316224,
+        7168372224
+      ],
+      "stage_forward_time_ms_per_rank": [
+        180.4837900161743,
+        166.60170093536377,
+        162.91460468292237
+      ]
+    },
+    {
+      "seed": 3,
+      "throughput_samples_per_s": 649.1774250267067,
+      "mem_peak_per_rank_bytes": [
+        7168765952,
+        7067316224,
+        7168372224
+      ],
+      "stage_forward_time_ms_per_rank": [
+        272.8950006866455,
+        251.54202617645262,
+        245.5364129257202
+      ]
+    }
+  ],
+  "aggregated": {
+    "num_runs": 3,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "throughput_mean": 653.3753664026752,
+    "throughput_std": 3.64311912574424,
+    "throughput_all": [
+      658.0611191842062,
+      652.8875549971126,
+      649.1774250267067
+    ],
+    "peak_memory_mean_per_rank_bytes": [
+      7168765952.0,
+      7067316224.0,
+      7168372224.0
+    ],
+    "peak_memory_std_per_rank_bytes": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "peak_memory_mean_per_rank_mb": [
+      6836.66796875,
+      6739.91796875,
+      6836.29248046875
+    ],
+    "peak_memory_std_per_rank_mb": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "stage_time_mean_per_rank_ms": [
+      181.14443508783975,
+      167.06528301874798,
+      163.23758637110393
+    ],
+    "stage_time_std_per_rank_ms": [
+      74.64577764627684,
+      68.78649643784395,
+      67.06524263979439
+    ]
+  }
+}

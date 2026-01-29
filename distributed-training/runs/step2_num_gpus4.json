@@ -1,0 +1,99 @@
+{
+  "config": {
+    "world_size": 3,
+    "global_batch_size": 64,
+    "chunks": 4,
+    "partition": "even",
+    "steps_warmup": 20,
+    "steps_measure": 100
+  },
+  "per_seed_results": [
+    {
+      "seed": 1,
+      "throughput_samples_per_s": 1096.0813652070674,
+      "mem_peak_per_rank_bytes": [
+        7193800704,
+        7092350976,
+        7193406976
+      ],
+      "stage_forward_time_ms_per_rank": [
+        68.92567713737488,
+        63.2041731262207,
+        63.16292087554932
+      ]
+    },
+    {
+      "seed": 2,
+      "throughput_samples_per_s": 1089.4121461932732,
+      "mem_peak_per_rank_bytes": [
+        7193800704,
+        7092350976,
+        7193406976
+      ],
+      "stage_forward_time_ms_per_rank": [
+        135.53878686904906,
+        124.49890962600708,
+        124.13862665176391
+      ]
+    },
+    {
+      "seed": 3,
+      "throughput_samples_per_s": 1086.4055757783954,
+      "mem_peak_per_rank_bytes": [
+        7193800704,
+        7092350976,
+        7193406976
+      ],
+      "stage_forward_time_ms_per_rank": [
+        203.81617193222047,
+        186.98931142807007,
+        186.49993630409242
+      ]
+    }
+  ],
+  "aggregated": {
+    "num_runs": 3,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "throughput_mean": 1090.6330290595786,
+    "throughput_std": 4.043360112326465,
+    "throughput_all": [
+      1096.0813652070674,
+      1089.4121461932732,
+      1086.4055757783954
+    ],
+    "peak_memory_mean_per_rank_bytes": [
+      7193800704.0,
+      7092350976.0,
+      7193406976.0
+    ],
+    "peak_memory_std_per_rank_bytes": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "peak_memory_mean_per_rank_mb": [
+      6860.54296875,
+      6763.79296875,
+      6860.16748046875
+    ],
+    "peak_memory_std_per_rank_mb": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "stage_time_mean_per_rank_ms": [
+      136.09354531288147,
+      124.89746472676593,
+      124.60049461046856
+    ],
+    "stage_time_std_per_rank_ms": [
+      55.07021102918116,
+      50.535856911888146,
+      50.35318483944935
+    ]
+  }
+}

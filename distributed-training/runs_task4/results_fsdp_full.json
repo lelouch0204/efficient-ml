@@ -1,0 +1,66 @@
+{
+  "spec": {
+    "mode": "fsdp_full",
+    "world_size": 4,
+    "global_batch_size": 64,
+    "steps_warmup": 20,
+    "steps_measure": 100,
+    "amp": false,
+    "lr": 0.0001,
+    "weight_decay": 0.01,
+    "seeds": "1,2,3"
+  },
+  "per_seed": [
+    {
+      "seed": 1,
+      "throughput_samples_per_s": 414.12507600482377,
+      "time_per_step_s": 0.15454268217086792,
+      "mem_peak_per_rank_bytes": [
+        9957889536,
+        9957889536,
+        9957889536,
+        9957889536
+      ]
+    },
+    {
+      "seed": 2,
+      "throughput_samples_per_s": 414.32008543374155,
+      "time_per_step_s": 0.15446994304656983,
+      "mem_peak_per_rank_bytes": [
+        10176927232,
+        10176919040,
+        10176919040,
+        10176919040
+      ]
+    },
+    {
+      "seed": 3,
+      "throughput_samples_per_s": 414.4319812032061,
+      "time_per_step_s": 0.15442823648452758,
+      "mem_peak_per_rank_bytes": [
+        10395964928,
+        10395948544,
+        10395948544,
+        10395948544
+      ]
+    }
+  ],
+  "aggregate": {
+    "throughput_mean": 414.2923808805905,
+    "throughput_std": 0.1268157637348957,
+    "time_per_step_mean": 0.15448028723398843,
+    "time_per_step_std": 4.7291334234305656e-05,
+    "mem_peak_per_rank_mean_bytes": [
+      10176927232.0,
+      10176919040.0,
+      10176919040.0,
+      10176919040.0
+    ],
+    "mem_peak_per_rank_std_bytes": [
+      178843529.87828666,
+      178836841.13829568,
+      178836841.13829568,
+      178836841.13829568
+    ]
+  }
+}

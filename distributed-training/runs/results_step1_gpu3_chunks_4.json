@@ -1,0 +1,99 @@
+{
+  "config": {
+    "world_size": 3,
+    "global_batch_size": 64,
+    "chunks": 4,
+    "partition": "even",
+    "steps_warmup": 20,
+    "steps_measure": 100
+  },
+  "per_seed_results": [
+    {
+      "seed": 1,
+      "throughput_samples_per_s": 1092.259822265111,
+      "mem_peak_per_rank_bytes": [
+        7193800704,
+        7092350976,
+        7193406976
+      ],
+      "stage_forward_time_ms_per_rank": [
+        69.1494004058838,
+        62.89530418395996,
+        62.989289102554324
+      ]
+    },
+    {
+      "seed": 2,
+      "throughput_samples_per_s": 1089.1376118886308,
+      "mem_peak_per_rank_bytes": [
+        7193800704,
+        7092350976,
+        7193406976
+      ],
+      "stage_forward_time_ms_per_rank": [
+        135.6348048877716,
+        124.64686888694763,
+        124.56953826904297
+      ]
+    },
+    {
+      "seed": 3,
+      "throughput_samples_per_s": 1080.480217265371,
+      "mem_peak_per_rank_bytes": [
+        7193800704,
+        7092350976,
+        7193406976
+      ],
+      "stage_forward_time_ms_per_rank": [
+        204.80641087532044,
+        187.18515332221986,
+        187.42781343460084
+      ]
+    }
+  ],
+  "aggregated": {
+    "num_runs": 3,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "throughput_mean": 1087.2925504730376,
+    "throughput_std": 4.9828346823843255,
+    "throughput_all": [
+      1092.259822265111,
+      1089.1376118886308,
+      1080.480217265371
+    ],
+    "peak_memory_mean_per_rank_bytes": [
+      7193800704.0,
+      7092350976.0,
+      7193406976.0
+    ],
+    "peak_memory_std_per_rank_bytes": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "peak_memory_mean_per_rank_mb": [
+      6860.54296875,
+      6763.79296875,
+      6860.16748046875
+    ],
+    "peak_memory_std_per_rank_mb": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "stage_time_mean_per_rank_ms": [
+      136.53020538965862,
+      124.90910879770915,
+      124.99554693539937
+    ],
+    "stage_time_std_per_rank_ms": [
+      55.385361657633545,
+      50.74145725821539,
+      50.80270791353673
+    ]
+  }
+}

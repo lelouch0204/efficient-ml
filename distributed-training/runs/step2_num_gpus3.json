@@ -1,0 +1,99 @@
+{
+  "config": {
+    "world_size": 3,
+    "global_batch_size": 64,
+    "chunks": 4,
+    "partition": "even",
+    "steps_warmup": 20,
+    "steps_measure": 100
+  },
+  "per_seed_results": [
+    {
+      "seed": 1,
+      "throughput_samples_per_s": 1094.6089677329144,
+      "mem_peak_per_rank_bytes": [
+        7193800704,
+        7092350976,
+        7193406976
+      ],
+      "stage_forward_time_ms_per_rank": [
+        68.9523870563507,
+        63.21782824516296,
+        63.263163833618165
+      ]
+    },
+    {
+      "seed": 2,
+      "throughput_samples_per_s": 1090.1172159809569,
+      "mem_peak_per_rank_bytes": [
+        7193800704,
+        7092350976,
+        7193406976
+      ],
+      "stage_forward_time_ms_per_rank": [
+        135.5071891117096,
+        124.65658212661744,
+        124.692281332016
+      ]
+    },
+    {
+      "seed": 3,
+      "throughput_samples_per_s": 1089.5308253270769,
+      "mem_peak_per_rank_bytes": [
+        7193800704,
+        7092350976,
+        7193406976
+      ],
+      "stage_forward_time_ms_per_rank": [
+        203.28924354553223,
+        187.21566780090333,
+        187.3026914215088
+      ]
+    }
+  ],
+  "aggregated": {
+    "num_runs": 3,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "throughput_mean": 1091.4190030136494,
+    "throughput_std": 2.26831357067405,
+    "throughput_all": [
+      1094.6089677329144,
+      1090.1172159809569,
+      1089.5308253270769
+    ],
+    "peak_memory_mean_per_rank_bytes": [
+      7193800704.0,
+      7092350976.0,
+      7193406976.0
+    ],
+    "peak_memory_std_per_rank_bytes": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "peak_memory_mean_per_rank_mb": [
+      6860.54296875,
+      6763.79296875,
+      6860.16748046875
+    ],
+    "peak_memory_std_per_rank_mb": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "stage_time_mean_per_rank_ms": [
+      135.91627323786417,
+      125.03002605756126,
+      125.08604552904767
+    ],
+    "stage_time_std_per_rank_ms": [
+      54.84355486421014,
+      50.62259475043367,
+      50.63969055157504
+    ]
+  }
+}
